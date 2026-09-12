@@ -46,7 +46,7 @@ aside img{
 main img {
     width: 150px;
     height: auto;
-    box-shadow: 20px grey;
+    box-shadow: 0 0 20px grey;
     border: 2px solid black;
     padding: 10px;
 }
