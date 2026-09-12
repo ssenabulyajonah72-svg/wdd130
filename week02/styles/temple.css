@@ -1,14 +1,36 @@
+
+main {
+    width: 400px;
+    margin: 0 auto;
+}
+
 header {
     background-color: grey;
     color: white;
-    padding: 0 10px;
+    padding: 0 3px;
     text-align: center;
-    font-size: 36px;
+    font-size: 26px;
+    margin: 50px 250px 50px;
     
 }
 img {
-    border: 2px solid black;
     padding: 10px;
     margin: 30px;
     align-items: center;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 30px grey;
 }
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    margin: 50px 250px 50px;
+    background-color: rgb(110, 106, 106);
+    text-align: center;
+    padding: 0 10px;
+    color: white;
+}
+
