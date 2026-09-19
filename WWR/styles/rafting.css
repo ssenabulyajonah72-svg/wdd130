@@ -1,19 +1,13 @@
 :root {
     --primary-color: #055a05;
-    /* forest green */
     --secondary-color: #f4a261;
-    /* warm sand */
     --accent1-color: #264653;
-    /* dark slate blue (used for header/text background) */
     --accent2-color: #e9c46a;
-    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --text-color: #264653;
-    /* Darker slate for main body text */
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -24,13 +18,11 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: white;
-    /* Match sample page background */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Main Container to match 840px width and center */
 header,
 main,
 footer {
@@ -38,48 +30,37 @@ footer {
     margin: 0 auto;
 }
 
-/* Header/Nav Styles */
 header {
     text-align: center;
-    /* Center the logo and nav */
     padding: 10px 0;
 }
 
 header img {
     max-width: 150px;
-    /* Adjust logo size */
     height: auto;
     margin-bottom: 5px;
 }
 
 nav a {
     display: block;
-    /* Align as a vertical list to match sample */
     text-decoration: none;
     color: blue;
-    /* Match link color from sample */
     font-size: 14px;
     margin-bottom: 4px;
-    /* Space between links */
 }
 
-/* General Heading Style (Matches H1, H2, H3 from sample) */
 h1,
 h2,
 h3 {
     font-family: var(--heading-font);
     color: white;
     background-color: var(--accent1-color);
-    /* Dark slate background */
     text-align: center;
     padding: 15px 0;
     width: 100%;
-    /* Spans full main content width */
     margin-bottom: 15px;
-    /* Space before paragraph/image */
 }
 
-/* Hero Section Styles */
 .hero {
     position: relative;
     width: 100%;
@@ -103,11 +84,9 @@ article {
 
 article p {
     flex: 1;
-
     font-size: 13px;
     line-height: 1.5;
     margin: 0;
-
 }
 
 article img {
@@ -121,8 +100,6 @@ section {
     width: 100%;
 }
 
-section h2 {}
-
 section p {
     margin: 10px 0;
     font-size: 13px;
@@ -134,7 +111,6 @@ main > section:last-of-type h2,
 main > section:last-of-type h3 {
     background-color: var(--accent1-color);
     margin-bottom: 25px;
-
 }
 
 footer {
