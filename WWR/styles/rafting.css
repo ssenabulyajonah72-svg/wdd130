@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue (used for header/text background) */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-color: #264653;
+    /* Darker slate for main body text */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: white;
+    /* Match sample page background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Container to match 840px width and center */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header/Nav Styles */
+header {
+    text-align: center;
+    /* Center the logo and nav */
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 150px;
+    /* Adjust logo size */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+nav a {
+    display: block;
+    /* Align as a vertical list to match sample */
+    text-decoration: none;
+    color: blue;
+    /* Match link color from sample */
+    font-size: 14px;
+    margin-bottom: 4px;
+    /* Space between links */
+}
+
+/* General Heading Style (Matches H1, H2, H3 from sample) */
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--accent1-color);
+    /* Dark slate background */
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    /* Spans full main content width */
+    margin-bottom: 15px;
+    /* Space before paragraph/image */
+}
+
+h1 {
+    /* No special position needed, normal flow */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Overlay (with small inset image) in Hero */
+article {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    background-color: var(--accent1-color);
+    color: white;
+    margin: 20px 0;
+    /* Vertical space for main section */
+    padding: 15px;
+    gap: 15px;
+    /* Space between text and small image */
+}
+
+article p {
+    flex: 1;
+    /* Text takes remaining space */
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    /* Override default paragraph margins */
+}
+
+/* Small image inside the dark article box */
+article img {
+    width: 100px;
+    /* Adjust inset image size */
+    height: auto;
+    float: none;
+    /* Turn off float from old CSS */
+    margin: 0;
+    /* Remove old margins */
+}
+
+/* History Section */
+section {
+    width: 100%;
+}
+
+section h2 {
+    /* H2 styles inherited from general rule */
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-color);
+    /* Dark slate blue */
+}
+
+/* Adventure Awaits Section */
+/* Note: Special styling for H3 needed.
+   In your HTML, make sure it is <h3>Adventure Awaits You!</h3>
+   for this specific selector. If it is <h2>, adjust the selector below.
+*/
+main > section:last-of-type h2,
+main > section:last-of-type h3 {
+    background-color: var(--accent1-color);
+    margin-bottom: 25px;
+    /* Extra bottom padding for main section */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+footer p {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.socialmedia a img {
+    width: 20px;
+    height: 20px;
+}
