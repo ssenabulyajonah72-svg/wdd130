@@ -79,10 +79,6 @@ h3 {
     /* Space before paragraph/image */
 }
 
-h1 {
-    /* No special position needed, normal flow */
-}
-
 /* Hero Section Styles */
 .hero {
     position: relative;
@@ -95,70 +91,52 @@ h1 {
     display: block;
 }
 
-/* Text Overlay (with small inset image) in Hero */
 article {
     display: flex;
     align-items: center;
-    /* Center vertically */
     background-color: var(--accent1-color);
     color: white;
     margin: 20px 0;
-    /* Vertical space for main section */
     padding: 15px;
     gap: 15px;
-    /* Space between text and small image */
 }
 
 article p {
     flex: 1;
-    /* Text takes remaining space */
+
     font-size: 13px;
     line-height: 1.5;
     margin: 0;
-    /* Override default paragraph margins */
+
 }
 
-/* Small image inside the dark article box */
 article img {
     width: 100px;
-    /* Adjust inset image size */
     height: auto;
     float: none;
-    /* Turn off float from old CSS */
     margin: 0;
-    /* Remove old margins */
 }
 
-/* History Section */
 section {
     width: 100%;
 }
 
-section h2 {
-    /* H2 styles inherited from general rule */
-}
+section h2 {}
 
 section p {
     margin: 10px 0;
     font-size: 13px;
     line-height: 1.5;
     color: var(--text-color);
-    /* Dark slate blue */
 }
 
-/* Adventure Awaits Section */
-/* Note: Special styling for H3 needed.
-   In your HTML, make sure it is <h3>Adventure Awaits You!</h3>
-   for this specific selector. If it is <h2>, adjust the selector below.
-*/
 main > section:last-of-type h2,
 main > section:last-of-type h3 {
     background-color: var(--accent1-color);
     margin-bottom: 25px;
-    /* Extra bottom padding for main section */
+
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0 20px 0;
