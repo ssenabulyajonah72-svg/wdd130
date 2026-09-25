@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-color: #264653;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: white;
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: white;
+    margin: 20px 0;
+    padding: 15px;
+    gap: 15px;
+}
+
+article p {
+    flex: 1;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+article img {
+    width: 100px;
+    height: auto;
+    float: none;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+main > section:last-of-type h2,
+main > section:last-of-type h3 {
+    background-color: var(--accent1-color);
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+footer p {
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.socialmedia a img {
+    width: 20px;
+    height: 20px;
+}
