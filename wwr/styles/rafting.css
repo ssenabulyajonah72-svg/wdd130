@@ -30,40 +30,48 @@ footer {
     margin: 0 auto;
 }
 
+/* --- HEADER --- */
 header {
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #e2d9f3;
+    /* Matches wireframe header tint */
+    border-bottom: 1px solid #ccc;
 }
 
 header img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
-    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-    display: block;
     text-decoration: none;
-    color: blue;
+    color: var(--text-color);
+    background-color: white;
+    border: 1px solid #777;
+    padding: 6px 14px;
     font-size: 14px;
-    margin-bottom: 4px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--heading-font);
-    color: white;
-    background-color: var(--accent1-color);
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-    margin-bottom: 15px;
+nav a:hover {
+    background-color: #210faa;
 }
 
+/* --- HERO SECTION --- */
 .hero {
     position: relative;
     width: 100%;
+    margin-top: 15px;
 }
 
 .hero img {
@@ -72,67 +80,140 @@ h3 {
     display: block;
 }
 
+/* If you want the h1 overlaid or right below the hero like the wireframe */
+h1 {
+    font-family: var(--heading-font);
+    color: white;
+    background-color: rgb(25, 23, 23);
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    padding: 12px 90px;
+    font-size: 22px;
+    margin: 15px 0;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 26px;
+    z-index: 10;
+}
+
+/* --- ARTICLE SECTION --- */
 article {
     display: flex;
-    align-items: center;
-    background-color: var(--accent1-color);
-    color: white;
-    margin: 20px 0;
-    padding: 15px;
-    gap: 15px;
+    align-items: left;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 20px;
+    gap: 20px;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 article p {
     flex: 1;
     font-size: 13px;
     line-height: 1.5;
+    color: var(--text-color);
     margin: 0;
 }
 
 article img {
-    width: 100px;
+    width: 120px;
     height: auto;
-    float: none;
-    margin: 0;
+    border: 1px solid #bce0fd;
+    background-color: #eaf4fc;
+
 }
 
-section {
+/* --- HISTORY SECTION --- */
+.history-section {
     width: 100%;
+    margin: 20px 0;
+    border: 2px solid #ccc;
 }
 
+h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+section ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.side-by-side img {
+    margin: 10px;
+}
+
+/* Styling for History content layout based on wireframe */
 section p {
-    margin: 10px 0;
     font-size: 13px;
     line-height: 1.5;
     color: var(--text-color);
+    margin-bottom: 10px;
 }
 
-main > section:last-of-type h2,
-main > section:last-of-type h3 {
-    background-color: var(--accent1-color);
-    margin-bottom: 25px;
+/* adventure section */
+.adventure-section {
+    border: 2px solid #ccc;
 }
 
+/* --- FOOTER --- */
 footer {
-    text-align: center;
-    padding: 10px 0 20px 0;
-    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2d9f3;
+    border-top: 1px solid #ccc;
+    padding: 15px 20px;
+    margin-top: auto;
     font-size: 12px;
 }
 
 footer p {
     color: var(--text-color);
-    margin-bottom: 5px;
+    margin: 0;
 }
 
 .socialmedia {
     display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 5px;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #555;
+    background-color: white;
 }
 
 .socialmedia a img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
