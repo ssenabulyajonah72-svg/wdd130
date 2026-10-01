@@ -87,17 +87,15 @@ h1 {
     background-color: rgb(25, 23, 23);
     /* border: 1px solid #ccc; */
     text-align: center;
-    padding: 12px 90px;
-    font-size: 22px;
-    margin: 15px 0;
 
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
 
     font-size: 26px;
     z-index: 10;
+    padding: 15px 3px;
 }
 
 /* --- ARTICLE SECTION --- */
