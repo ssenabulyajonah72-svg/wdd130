@@ -215,3 +215,108 @@ footer p {
     width: 16px;
     height: 16px;
 }
+
+/* contact us page designing */
+/* --- CONTACT PAGE OVERRIDES --- */
+.contact-main h1 {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    background-color: white;
+    color: rgb(14, 3, 3);
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.contact-main section {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* info details */
+.info-details {
+    text-align: center;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Form Styling Additions */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.form-section label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--body-font);
+}
+
+.form-section fieldset {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-section fieldset label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-label {
+    font-weight: normal !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.employee-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
