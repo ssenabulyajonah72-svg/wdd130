@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Exercise</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+</head>
+
+<body>
+    <header>
+        <h1> My Poll-Form</h1>
+
+    </header>
+    <main>
+        <form>
+            <div class="font-item column2">
+                <label for="fullname">Full Name: </label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="font-item column2">
+                <label for="useremail">Email Address:</label>
+                <input type="text" id="useremail" name="useremail" required>
+            </div>
+
+            <div class="font-item column1">
+                <label for="favbrowser"> What is your favorite browser</label>
+                <select name="select" id="favbrowser">
+                    <option value="chrome">Chrome</option>
+                    <option value="opera">Opera Mini</option>
+                    <option value="firefox">Fire Fox</option>
+                </select>
+            </div>
+
+            <div class="font-item column1">
+                <label for="pet">Do you have a pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
+
+            <div>
+                <label for="feedback"> List places you have visited</label>
+                <textarea type="text" id="feedback" name="feedback" rows="4"
+                  placeholder="Uganda German England Asia"></textarea>
+            </div>
+
+            <button type="submit"> Submit Poll</button>
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
