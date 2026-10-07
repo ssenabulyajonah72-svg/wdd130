@@ -74,10 +74,20 @@ nav a:hover {
     margin-top: 15px;
 }
 
+.hero article img {
+    float: right;
+}
+
+/* .hero article {
+    position: absolute;
+} */
+
 .hero img {
+    /* position: absolute; */
     width: 100%;
     height: auto;
     display: block;
+    float: right;
 }
 
 /* If you want the h1 overlaid or right below the hero like the wireframe */
@@ -107,7 +117,9 @@ article {
     margin: 15px 0;
     padding: 20px;
     gap: 20px;
+}
 
+.adventure {
     position: absolute;
     top: 60%;
     left: 50%;
